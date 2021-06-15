@@ -11,9 +11,13 @@
                
      <context:component-scan base-package="com.hello"/>
 
-     <!-- ini adalah bean property -->
+    
      <bean id="tyre" class="com.hello.Tyre">
-         <property name="brand" value="Hello"></property>
+          <!-- ini adalah bean property , bisa dikatakan bahwa ini adalah setter injection
+        krena dengan cara ini sperti menggunakan setter-->
+         <!-- <property name="brand" value="Hello"></property> -->
+
+         <constructor-arg value="Constructor"></constructor-arg>
      </bean>
      
      <!-- ini sudah tidak perlu karena sudah ada Annotation Based Configuration -->
