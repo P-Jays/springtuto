@@ -1,5 +1,8 @@
 package com.hello;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Motor implements Vehicle {
 
    
