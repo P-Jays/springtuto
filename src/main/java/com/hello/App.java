@@ -22,6 +22,8 @@ public class App
         // shit bro!!!
         // the spring.xml need to be place in src/main/java/spring.xml not test!!! not inside the hello!!
 
-
+        // for bean property
+        Tyre t = (Tyre) context.getBean("tyre");
+        System.out.println(t);
     }
 }

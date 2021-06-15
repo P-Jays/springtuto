@@ -11,6 +11,10 @@
                
      <context:component-scan base-package="com.hello"/>
 
+     <!-- ini adalah bean property -->
+     <bean id="tyre" class="com.hello.Tyre">
+         <property name="brand" value="Hello"></property>
+     </bean>
      
      <!-- ini sudah tidak perlu karena sudah ada Annotation Based Configuration -->
     <!-- <bean id="car" class="com.hello.Motor"></bean> -->
